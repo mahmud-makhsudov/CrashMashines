@@ -1,60 +1,77 @@
 @media (max-width: 885px) {
-  .slider__inner{
+  .slider__title--sm {
+    display: block;
+  }
+  .slider__inner {
     flex-direction: column;
     align-items: center;
   }
+
   .slider__img {
     width: 140px;
     height: 100%;
     margin-right: 0px;
   }
-  .slider__title--mobile{
+
+  .slider__title--mobile {
     display: block;
   }
-  .slider__title--lg{
+
+  .slider__title--lg {
     display: none;
   }
+
   .slider-buttons {
     top: 235px;
   }
-  .slider__line-value{
+
+  .slider__line-value {
     padding-right: 20px;
   }
-  .slider__line-images{
+
+  .slider__line-images {
     margin-left: -20px;
     margin-top: -20px;
     display: flex;
     flex-wrap: wrap;
     padding-right: 20px;
-    img{
+
+    img {
       margin-left: 20px;
       margin-top: 20px;
       width: 70px;
       height: 70px;
-      & + img {
+
+      &+img {
         margin-left: 20px;
       }
-    }  
+    }
   }
-  .slider__bottom{
+
+  .slider__bottom {
     text-align: center;
   }
+
   .slider__list {
     margin-top: 20px;
   }
 }
+
 @media (max-width: 670px) {
-  .banner-bottom{
+  .banner-bottom {
     flex-direction: column;
     align-items: center;
   }
-  .banner-bottom__item + .banner-bottom__item{
+
+  .banner-bottom__item+.banner-bottom__item {
     margin-top: 26px;
   }
+
   .benefits__items {
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .benefits__item {
     flex-basis: 50%;
     max-width: 100%;
@@ -64,11 +81,29 @@
     margin-top: 15px;
   }
 }
+
 @media (max-width: 520px) {
-  .banner-top__text{
+  .banner-top__text {
     padding: 0 30px;
   }
+  #iframe {
+    width: 320px !important;
+  }
+  .slider__line-label {
+    min-width: 80px;
+    margin-right: 20px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .slider__line-value {
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
   .header__menu-list {
+    font-size: 22px;
     position: absolute;
     top: 38px;
     right: -15px;
@@ -81,7 +116,7 @@
     transition: all .3s;
     pointer-events: none;
     opacity: 0;
-
+    text-align: center;
     &.active {
       pointer-events: all;
       opacity: 1;
@@ -111,13 +146,14 @@
     font-size: 14px;
     line-height: 16px;
   }
+
   .about__video iframe {
-    height: 200px !important; 
+    height: 200px !important;
   }
 
   .header__menu-item+.header__menu-item {
     margin-left: 0;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .main-screen__title {
@@ -134,6 +170,7 @@
   .main-screen {
     background-position: top left;
   }
+
   .footer {
     font-size: 10px;
   }
